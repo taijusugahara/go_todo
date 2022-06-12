@@ -1,0 +1,267 @@
+2022/06/11 18:55:40 main.go:14: test
+2022/06/11 20:21:29 base.go:36: near "name": syntax error
+2022/06/11 20:31:37 base.go:39: ok
+2022/06/12 12:57:43 server.go:3197: http: panic serving [::1]:52224: template: index.html:2: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x14000204100})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x14000142000}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x14000142000}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x14000142000?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x14000142000}, 0x14000182200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000116030?}, {0x1047d3a70, 0x14000142000}, 0x14000182200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b7360, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:57:43 server.go:3197: http: panic serving [::1]:52225: template: index.html:2: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x14000204340})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x1400026a000}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x1400026a000}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x1400026a000?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x1400026a000}, 0x14000182100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009b7d0?}, {0x1047d3a70, 0x1400026a000}, 0x14000182100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b7400, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:57:43 server.go:3197: http: panic serving [::1]:52226: template: index.html:2: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x14000204590})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x1400026a0e0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x1400026a0e0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x1400026a0e0?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x1400026a0e0}, 0x14000276000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200c30?}, {0x1047d3a70, 0x1400026a0e0}, 0x14000276000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000274000, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:57:45 server.go:3197: http: panic serving [::1]:52227: template: index.html:2: unexpected EOF
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x14000099290})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x1400026a1c0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x1400026a1c0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x1400026a1c0?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x1400026a1c0}, 0x14000276200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000201470?}, {0x1047d3a70, 0x1400026a1c0}, 0x14000276200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002740a0, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:57:45 server.go:3197: http: panic serving [::1]:52228: template: index.html:2: unexpected EOF
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x140000994d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x140001921c0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x140001921c0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x140001921c0?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x140001921c0}, 0x14000276300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000201530?}, {0x1047d3a70, 0x140001921c0}, 0x14000276300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000274140, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:57:45 server.go:3197: http: panic serving [::1]:52229: template: index.html:2: unexpected EOF
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1047756a0, 0x1400011a210})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x1047d3a70?, 0x140001922a0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x1047d3a70, 0x140001922a0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1047d3a70?, 0x140001922a0?}, 0x104293120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1047d3a70, 0x140001922a0}, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001c6570?}, {0x1047d3a70, 0x140001922a0}, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b74a0, {0x1047d3d28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:28 server.go:3197: http: panic serving [::1]:52235: template: index.html:2: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x140000992d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x140001920e0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x140001920e0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x140001920e0?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x140001920e0}, 0x1400011e000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000116030?}, {0x10294fa70, 0x140001920e0}, 0x1400011e000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b7360, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:28 server.go:3197: http: panic serving [::1]:52236: template: index.html:2: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x14000204100})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x140001921c0}, {0x0, 0x0}, {0x140000bf9c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x140001921c0}, 0x140000bfa3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x140001921c0?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x140001921c0}, 0x14000182100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009b7d0?}, {0x10294fa70, 0x140001921c0}, 0x14000182100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b7400, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:28 server.go:3197: http: panic serving [::1]:52237: template: index.html:2: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x14000204350})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x1400026a000}, {0x0, 0x0}, {0x140000bf9c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x1400026a000}, 0x140000bfa3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x1400026a000?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x1400026a000}, 0x14000256000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200450?}, {0x10294fa70, 0x1400026a000}, 0x14000256000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c000, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:33 server.go:3197: http: panic serving [::1]:52238: template: index.html:2: unexpected EOF
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x14000099660})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x140001922a0}, {0x0, 0x0}, {0x140000b99c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x140001922a0}, 0x140000b9a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x140001922a0?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x140001922a0}, 0x14000182200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001d0420?}, {0x10294fa70, 0x140001922a0}, 0x14000182200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c0a0, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:33 server.go:3197: http: panic serving [::1]:52239: template: index.html:2: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x1400011a230})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x14000140000}, {0x0, 0x0}, {0x140001379c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x14000140000}, 0x14000137a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x14000140000?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x14000140000}, 0x14000256100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200cf0?}, {0x10294fa70, 0x14000140000}, 0x14000256100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c140, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/06/12 12:58:33 server.go:3197: http: panic serving [::1]:52240: template: index.html:2: unexpected EOF
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1028f16a0, 0x1400011a470})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/contorollers.generateHTML({0x10294fa70?, 0x140001400e0}, {0x0, 0x0}, {0x140001379c8?, 0x3, 0x0?})
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/server.go:19 +0xd0
+todo_app/app/contorollers.index({0x10294fa70, 0x140001400e0}, 0x14000137a3b?)
+	/Users/taijusugahara/go/src/todo_app/app/contorollers/route_main.go:23 +0xbc
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10294fa70?, 0x140001400e0?}, 0x10240f120?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10294fa70, 0x140001400e0}, 0x14000256200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200db0?}, {0x10294fa70, 0x140001400e0}, 0x14000256200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c1e0, {0x10294fd28, 0x1400009b680})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
